@@ -1,0 +1,126 @@
+
+body {
+    background-color: beige;
+    font-family: "Telugu Sangam MN";
+}
+
+div{
+    background-color: sandybrown;
+}
+
+h1 {
+    color: azure;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Alex Brush';
+}
+
+ul {
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    background-color: peru;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: sandybrown;
+}
+
+h2 {
+    color: darkslategray;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+h3 {
+    color: darkslategray;
+    font-size: 45px;
+    text-align: center;
+}
+
+h4 {
+    color: dimgray;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+h5 {
+    font-family: "Telugu Sangam MN";
+    font-size: 20px;
+}
+
+p {
+    font-family: "Helvetica Neue";
+    font-size: 30px;
+    text-indent: 40px;
+}
+
+img {
+    width: 1665px;
+    height: 800px;
+}
+
+div1 {
+    text-align: center;
+}
+
+.btn-group button {
+    background-color: transparent; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: lightblue;
+}
+
+/*
+flip card
+ */
+.flip3D{ width:275px; height:275px; margin:15px; float:left; }
+.flip3D > .front{
+    position: absolute;
+    transform: perspective( 600px ) rotateY( 0deg );
+    background:#cd853f; width:250px; height:250px; border-radius: 10px;
+    backface-visibility: hidden;
+    transition: transform .3s linear 0s;
+    text-align: center;
+    color: azure;
+}
+.flip3D > .back{
+    position: absolute;
+    transform: perspective( 800px ) rotateY( 180deg );
+    background: #f4a460; width:275px; height:275px; border-radius: 10px;
+    backface-visibility: hidden;
+    transition: transform .3s linear 0s;
+    text-align: center;
+    color: darkslategray;
+}
+.flip3D:hover > .front{
+    transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+    transform: perspective( 600px ) rotateY( 0deg );
+}
